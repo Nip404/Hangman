@@ -1,7 +1,7 @@
 #libraries v2
 import random
 
-read = lambda filename: open("%s.txt" % filename,"r+").read().split("\n")
+read = lambda filename: open("%s.txt" % filename,"r").read().split("\n")
 
 class easy:
     def choose_word(self):
