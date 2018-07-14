@@ -13,4 +13,4 @@ You are free to edit the vocabulary libraries:
 - "mediumlib.txt
 - "hardlib.txt"
 
-If there is an error regarding the loading of an image, move the image(s) into the same directory.
+If there is an error regarding image loading or opening a file, move the image(s) into the same directory.
