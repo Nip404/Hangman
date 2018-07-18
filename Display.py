@@ -60,7 +60,7 @@ class Display:
     def update_alphabetSurf(self):
         self.alphabetSurf.fill((0,0,139))
         
-        corr_head = self.font1.render("Corrent letters:",True,(255,140,0))
+        corr_head = self.font1.render("Correct letters:",True,(255,140,0))
         corr_body = self.font2.render(",".join(self.correct),True,(255,140,0))
 
         incorr_head = self.font1.render("Incorrect letters:",True,(255,140,0))
