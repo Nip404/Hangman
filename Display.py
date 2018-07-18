@@ -2,9 +2,11 @@
 import pygame
 import random
 import sys
-from libraries2 import easy, medium, hard
+from libraries import easy, medium, hard
 
 pygame.init()
+tmp = pygame.display.set_mode((0,0))
+
 states = [pygame.image.load("state%s.jpg" % i).convert() for i in range(10)]
 
 class Display:
