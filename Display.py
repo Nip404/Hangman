@@ -5,7 +5,7 @@ import random
 import sys
 
 pygame.init()
-tmp = pygame.display.set_mode((0,0))
+tmp = pygame.display.set_mode((1,1))
 
 states = [pygame.image.load("state%s.jpg" % i).convert() for i in range(10)]
 
