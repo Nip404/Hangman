@@ -1,8 +1,8 @@
-#display v1
+from libraries import easy, medium, hard
+
 import pygame
 import random
 import sys
-from libraries import easy, medium, hard
 
 pygame.init()
 tmp = pygame.display.set_mode((0,0))
