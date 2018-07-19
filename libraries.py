@@ -1,4 +1,3 @@
-#libraries v2
 import random
 
 read = lambda filename: open("%s.txt" % filename,"r").read().split("\n")
