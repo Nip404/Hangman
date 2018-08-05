@@ -7,7 +7,7 @@ import sys
 pygame.init()
 tmp = pygame.display.set_mode((1,1))
 
-states = [pygame.image.load("state%s.jpg" % i).convert() for i in range(10)]
+states = [pygame.image.load(f"Images/state{i}.jpg").convert() for i in range(10)]
 
 class Display:
     def __init__(self,difficulty,surface,windowsize,font1,font2): #easy=0,med=1,hard=2
