@@ -8,7 +8,7 @@ s = [800,600]
 pygame.init()
 screen = pygame.display.set_mode(s,0,32)
 pygame.display.set_caption("Hangman v1 by NIP")
-finalImages = [pygame.image.load("Images/final{i}.jpg").convert() for i in range(11)]
+finalImages = [pygame.image.load(f"Images/final{i}.jpg").convert() for i in range(11)]
 
 big = pygame.font.SysFont("Garamond MS",50)
 med = pygame.font.SysFont("Garamond MS",20)
@@ -35,7 +35,7 @@ def startscreen():
 def endscreen(info):
     lives,final,win = info
 
-    head = big.render(f"You {won if win else lost} with {lives} {life if lives == 1 else lives} remaining!"),True,(0,0,0))
+    head = big.render(f"You {'won' if win else 'lost'} with {lives}/10 {'life' if lives == 1 else 'lives'} remaining!"),True,(0,0,0))
     foot = big.render(f"The final word was: {final}",True,(0,0,0))
 
     while True:
